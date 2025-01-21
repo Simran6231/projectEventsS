@@ -3,7 +3,7 @@ const Schema=mongoose.Schema;
 
 const NoteSchema=new Schema({
     user:{
-        type:String,
+        type: Schema.ObjectId,
         ref:'User'
     },
     title:{
@@ -17,6 +17,10 @@ const NoteSchema=new Schema({
     createdAt:{
         type:Date,
         default:Date.now()
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now()
     }
 
 });

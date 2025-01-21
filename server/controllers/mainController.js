@@ -4,7 +4,7 @@
  */
 exports.homepage=async(req,res)=>{
     const locals={
-        title:'GetNotes',
+        title:'NodeJs Notes',
         description:"Free NodeJs Notes App",
     }
     res.render('index',{
@@ -19,7 +19,7 @@ exports.homepage=async(req,res)=>{
  */
 exports.about=async(req,res)=>{
     const locals={
-        title:'About -GetNotes',
+        title:'About - NodeJs Notes',
         description:"Free NodeJs Notes App",
     }
     res.render('about',locals); 

@@ -36,6 +36,7 @@ app.use(passport.session());
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
+app.use(methodOverride("_method"));
 
 //Connect to databse
 connectDB();
@@ -49,8 +50,9 @@ app.set('layout','./layouts/main');
 app.set('view engine','ejs');
 
 //routes
+
+app.use('/',require('./server/routes/auth'));
 app.use('/',require('./server/routes/index'));//now we can save all our routes inside the servers
-app.use('/',require('./server/routes/auth'));``
 app.use('/',require('./server/routes/dashboard'));
 //handle 404
 app.get('*',function(req,res){
