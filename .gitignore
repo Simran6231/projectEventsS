@@ -1,0 +1,3 @@
+.env
+/node_modules
+//both of these wont be uploaded on the git now
