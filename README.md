@@ -1,3 +1,4 @@
-# Project-notes
+# Project-EVENTS
 
-This project is made for the purpose of the internship offered by Kernel Synergy.
+THIS PROJECT IS STILL IN PROGRESS
+
