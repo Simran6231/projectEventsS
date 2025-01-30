@@ -1,7 +1,7 @@
 const mongoose=require('mongoose');
 const Schema=mongoose.Schema;
 
-const NoteSchema=new Schema({
+const EventSchema=new Schema({
     user:{
         type: Schema.ObjectId,
         ref:'User'
@@ -14,6 +14,11 @@ const NoteSchema=new Schema({
         type:String,
         required:true
     },
+    venue:{
+        type:String,
+        required:true
+    },
+
     createdAt:{
         type:Date,
         default:Date.now()
@@ -25,4 +30,4 @@ const NoteSchema=new Schema({
 
 });
 
-module.exports=mongoose.model("Note",NoteSchema);
+module.exports=mongoose.model("Event",EventSchema);
