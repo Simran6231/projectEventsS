@@ -93,7 +93,7 @@ exports.dashboard = async (req, res) => {
   
     const locals = {
       title: "Dashboard",
-      description: "Free NodeJS Notes App.",
+      description: "Free NodeJS Event App.",
     };
   
     try {
